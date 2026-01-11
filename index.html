@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Pranav Suryawanshi | Portfolio</title>
+    <!-- Tailwind Play CDN is required for dynamic utility classes in this environment -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +28,7 @@
         #root {
             width: 100%;
             overflow-x: hidden;
+            min-height: 100vh;
         }
         .bg-grid {
             background-size: 50px 50px;
@@ -80,6 +82,7 @@
     "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
   }
 }
@@ -88,5 +91,7 @@
 <body class="text-slate-600 selection:bg-indigo-500/10">
     <div class="fixed inset-0 bg-grid pointer-events-none z-0"></div>
     <div id="root"></div>
+    <!-- Entry point script -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>

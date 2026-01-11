@@ -1,4 +1,3 @@
-
 import { Experience, Project, Education, Certification } from './types';
 
 export const PERSONAL_INFO = {
@@ -8,9 +7,7 @@ export const PERSONAL_INFO = {
   phone: "9767349080",
   location: "Pune, Maharashtra, India",
   linkedin: "linkedin.com/in/pranav-surywanshi",
-  github: "github.com/pranav2216",
-  // Using the direct content link for the Google Drive ID provided
-  profileImage: "https://lh3.googleusercontent.com/d/1w1KaPNhQX7F1glJXAJJYpzotCCFzS4T5" 
+  github: "github.com/pranav2216"
 };
 
 export const SKILLS = [
